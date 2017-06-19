@@ -2,87 +2,75 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'DeBounce:md_debounce|DB_out'
-Slack : -14.462
-TNS   : -3921.598
+Type  : Slow 1200mV 85C Model Setup 'frequency_divider:md_clock|freq[25]'
+Slack : -13.275
+TNS   : -3744.710
 
 Type  : Slow 1200mV 85C Model Setup 'clock_50'
-Slack : -1.442
-TNS   : -11.929
+Slack : -2.329
+TNS   : -35.282
 
 Type  : Slow 1200mV 85C Model Hold 'clock_50'
-Slack : -0.051
-TNS   : -0.051
+Slack : -0.192
+TNS   : -0.192
 
-Type  : Slow 1200mV 85C Model Hold 'DeBounce:md_debounce|DB_out'
-Slack : 0.303
+Type  : Slow 1200mV 85C Model Hold 'frequency_divider:md_clock|freq[25]'
+Slack : 0.387
 TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'reset'
-Slack : -3.000
-TNS   : -24.845
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_50'
 Slack : -3.000
-TNS   : -20.990
+TNS   : -36.410
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DeBounce:md_debounce|DB_out'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'frequency_divider:md_clock|freq[25]'
 Slack : -1.285
 TNS   : -452.320
 
-Type  : Slow 1200mV 0C Model Setup 'DeBounce:md_debounce|DB_out'
-Slack : -13.207
-TNS   : -3583.409
+Type  : Slow 1200mV 0C Model Setup 'frequency_divider:md_clock|freq[25]'
+Slack : -11.932
+TNS   : -3381.298
 
 Type  : Slow 1200mV 0C Model Setup 'clock_50'
-Slack : -1.285
-TNS   : -9.543
+Slack : -1.957
+TNS   : -28.936
 
 Type  : Slow 1200mV 0C Model Hold 'clock_50'
-Slack : 0.029
-TNS   : 0.000
+Slack : -0.093
+TNS   : -0.093
 
-Type  : Slow 1200mV 0C Model Hold 'DeBounce:md_debounce|DB_out'
-Slack : 0.394
+Type  : Slow 1200mV 0C Model Hold 'frequency_divider:md_clock|freq[25]'
+Slack : 0.340
 TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'reset'
-Slack : -3.000
-TNS   : -24.845
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_50'
 Slack : -3.000
-TNS   : -20.990
+TNS   : -36.410
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DeBounce:md_debounce|DB_out'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'frequency_divider:md_clock|freq[25]'
 Slack : -1.285
 TNS   : -452.320
 
-Type  : Fast 1200mV 0C Model Setup 'DeBounce:md_debounce|DB_out'
-Slack : -6.683
-TNS   : -1817.103
+Type  : Fast 1200mV 0C Model Setup 'frequency_divider:md_clock|freq[25]'
+Slack : -6.003
+TNS   : -1701.164
 
 Type  : Fast 1200mV 0C Model Setup 'clock_50'
-Slack : -0.195
-TNS   : -0.404
+Slack : -0.658
+TNS   : -5.076
 
 Type  : Fast 1200mV 0C Model Hold 'clock_50'
-Slack : -0.273
-TNS   : -0.273
+Slack : -0.275
+TNS   : -0.275
 
-Type  : Fast 1200mV 0C Model Hold 'DeBounce:md_debounce|DB_out'
-Slack : -0.021
-TNS   : -0.021
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'reset'
-Slack : -3.000
-TNS   : -22.962
+Type  : Fast 1200mV 0C Model Hold 'frequency_divider:md_clock|freq[25]'
+Slack : 0.174
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_50'
 Slack : -3.000
-TNS   : -17.864
+TNS   : -30.788
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DeBounce:md_debounce|DB_out'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency_divider:md_clock|freq[25]'
 Slack : -1.000
 TNS   : -352.000
 

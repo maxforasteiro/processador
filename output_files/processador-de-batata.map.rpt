@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador-de-batata
-Mon Jun 19 17:40:24 2017
+Mon Jun 19 18:30:41 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -17,7 +17,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: DeBounce:md_debounce
+ 12. Parameter Settings for User Entity Instance: frequency_divider:md_clock
  13. Port Connectivity Checks: "mux_4:md_alu_mem_output"
  14. Port Connectivity Checks: "output_data:md_output_data"
  15. Port Connectivity Checks: "mux_2:md_mux_alu_input2"
@@ -29,9 +29,8 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  21. Port Connectivity Checks: "bin_to_7seg:comb_4"
  22. Port Connectivity Checks: "bin_to_7seg:md_opcode_presenter"
  23. Port Connectivity Checks: "bin_to_dec:md_opcode_converter"
- 24. Port Connectivity Checks: "DeBounce:md_debounce"
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -57,15 +56,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 19 17:40:24 2017      ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 19 18:30:41 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador-de-batata                      ;
 ; Top-level Entity Name              ; processing_unit                            ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 2,078                                      ;
-;     Total combinational functions  ; 1,835                                      ;
-;     Dedicated logic registers      ; 383                                        ;
-; Total registers                    ; 383                                        ;
+; Total logic elements               ; 2,072                                      ;
+;     Total combinational functions  ; 1,848                                      ;
+;     Dedicated logic registers      ; 378                                        ;
+; Total registers                    ; 378                                        ;
 ; Total pins                         ; 78                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -172,56 +171,56 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
-; bin_to_7seg.v                    ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/bin_to_7seg.v      ;         ;
-; DeBounce.v                       ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/DeBounce.v         ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/alu.v              ;         ;
-; extender.v                       ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/extender.v         ;         ;
-; register_base.v                  ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/register_base.v    ;         ;
-; program_counter.v                ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/program_counter.v  ;         ;
-; memory_data.v                    ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/memory_data.v      ;         ;
-; processing_unit.v                ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/processing_unit.v  ;         ;
-; instruction_data.v               ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/instruction_data.v ;         ;
-; output_data.v                    ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/output_data.v      ;         ;
-; mux_2.v                          ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/mux_2.v            ;         ;
-; mux_4.v                          ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/mux_4.v            ;         ;
-; control_unit.v                   ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/control_unit.v     ;         ;
-; bin_to_dec.v                     ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/bin_to_dec.v       ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+; frequency_divider.v              ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/frequency_divider.v ;         ;
+; bin_to_7seg.v                    ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/bin_to_7seg.v       ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/alu.v               ;         ;
+; extender.v                       ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/extender.v          ;         ;
+; register_base.v                  ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/register_base.v     ;         ;
+; program_counter.v                ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/program_counter.v   ;         ;
+; memory_data.v                    ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/memory_data.v       ;         ;
+; processing_unit.v                ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/processing_unit.v   ;         ;
+; instruction_data.v               ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/instruction_data.v  ;         ;
+; output_data.v                    ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/output_data.v       ;         ;
+; mux_2.v                          ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/mux_2.v             ;         ;
+; mux_4.v                          ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/mux_4.v             ;         ;
+; control_unit.v                   ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/control_unit.v      ;         ;
+; bin_to_dec.v                     ; yes             ; User Verilog HDL File  ; /home/max/faculdade/processador-de-batata/bin_to_dec.v        ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                               ;
-+---------------------------------------------+-----------------------------+
-; Resource                                    ; Usage                       ;
-+---------------------------------------------+-----------------------------+
-; Estimated Total logic elements              ; 2,078                       ;
-;                                             ;                             ;
-; Total combinational functions               ; 1835                        ;
-; Logic element usage by number of LUT inputs ;                             ;
-;     -- 4 input functions                    ; 1261                        ;
-;     -- 3 input functions                    ; 341                         ;
-;     -- <=2 input functions                  ; 233                         ;
-;                                             ;                             ;
-; Logic elements by mode                      ;                             ;
-;     -- normal mode                          ; 1732                        ;
-;     -- arithmetic mode                      ; 103                         ;
-;                                             ;                             ;
-; Total registers                             ; 383                         ;
-;     -- Dedicated logic registers            ; 383                         ;
-;     -- I/O registers                        ; 0                           ;
-;                                             ;                             ;
-; I/O pins                                    ; 78                          ;
-; Embedded Multiplier 9-bit elements          ; 0                           ;
-; Maximum fan-out node                        ; DeBounce:md_debounce|DB_out ;
-; Maximum fan-out                             ; 353                         ;
-; Total fan-out                               ; 7774                        ;
-; Average fan-out                             ; 3.27                        ;
-+---------------------------------------------+-----------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                       ;
++---------------------------------------------+-------------------------------------+
+; Resource                                    ; Usage                               ;
++---------------------------------------------+-------------------------------------+
+; Estimated Total logic elements              ; 2,072                               ;
+;                                             ;                                     ;
+; Total combinational functions               ; 1848                                ;
+; Logic element usage by number of LUT inputs ;                                     ;
+;     -- 4 input functions                    ; 1267                                ;
+;     -- 3 input functions                    ; 340                                 ;
+;     -- <=2 input functions                  ; 241                                 ;
+;                                             ;                                     ;
+; Logic elements by mode                      ;                                     ;
+;     -- normal mode                          ; 1731                                ;
+;     -- arithmetic mode                      ; 117                                 ;
+;                                             ;                                     ;
+; Total registers                             ; 378                                 ;
+;     -- Dedicated logic registers            ; 378                                 ;
+;     -- I/O registers                        ; 0                                   ;
+;                                             ;                                     ;
+; I/O pins                                    ; 78                                  ;
+; Embedded Multiplier 9-bit elements          ; 0                                   ;
+; Maximum fan-out node                        ; frequency_divider:md_clock|freq[25] ;
+; Maximum fan-out                             ; 353                                 ;
+; Total fan-out                               ; 7768                                ;
+; Average fan-out                             ; 3.26                                ;
++---------------------------------------------+-------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -229,25 +228,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
-; |processing_unit                          ; 1835 (0)          ; 383 (0)      ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |processing_unit                                                    ; work         ;
-;    |DeBounce:md_debounce|                 ; 13 (13)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|DeBounce:md_debounce                               ; work         ;
-;    |alu:md_alu|                           ; 262 (262)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|alu:md_alu                                         ; work         ;
+; |processing_unit                          ; 1848 (0)          ; 378 (0)      ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |processing_unit                                                    ; work         ;
+;    |alu:md_alu|                           ; 263 (263)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|alu:md_alu                                         ; work         ;
 ;    |bin_to_7seg:comb_5|                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|bin_to_7seg:comb_5                                 ; work         ;
 ;    |bin_to_7seg:md_opcode_presenter|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|bin_to_7seg:md_opcode_presenter                    ; work         ;
 ;    |bin_to_7seg:md_pc_presenter|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|bin_to_7seg:md_pc_presenter                        ; work         ;
 ;    |bin_to_dec:md_pc_converter|           ; 192 (192)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|bin_to_dec:md_pc_converter                         ; work         ;
 ;    |control_unit:md_control_unit|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|control_unit:md_control_unit                       ; work         ;
-;    |instruction_data:md_instruction_data| ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|instruction_data:md_instruction_data               ; work         ;
-;    |mux_2:md_mux_alu_input2|              ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|mux_2:md_mux_alu_input2                            ; work         ;
+;    |frequency_divider:md_clock|           ; 26 (26)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|frequency_divider:md_clock                         ; work         ;
+;    |instruction_data:md_instruction_data| ; 37 (37)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|instruction_data:md_instruction_data               ; work         ;
+;    |mux_2:md_mux_alu_input2|              ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|mux_2:md_mux_alu_input2                            ; work         ;
 ;    |mux_4:md_alu_mem_output|              ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|mux_4:md_alu_mem_output                            ; work         ;
-;    |output_data:md_output_data|           ; 397 (0)           ; 49 (49)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|output_data:md_output_data                         ; work         ;
+;    |output_data:md_output_data|           ; 397 (0)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|output_data:md_output_data                         ; work         ;
 ;       |bin_to_7seg:md_hex_0|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|output_data:md_output_data|bin_to_7seg:md_hex_0    ; work         ;
 ;       |bin_to_7seg:md_hex_1|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|output_data:md_output_data|bin_to_7seg:md_hex_1    ; work         ;
 ;       |bin_to_7seg:md_hex_2|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|output_data:md_output_data|bin_to_7seg:md_hex_2    ; work         ;
 ;       |bin_to_7seg:md_hex_3|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|output_data:md_output_data|bin_to_7seg:md_hex_3    ; work         ;
 ;       |bin_to_dec:md_conversor|           ; 369 (369)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|output_data:md_output_data|bin_to_dec:md_conversor ; work         ;
 ;    |program_counter:md_pc|                ; 65 (65)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|program_counter:md_pc                              ; work         ;
-;    |register_base:md_register_base|       ; 799 (799)         ; 288 (288)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|register_base:md_register_base                     ; work         ;
+;    |register_base:md_register_base|       ; 796 (796)         ; 288 (288)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processing_unit|register_base:md_register_base                     ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -738,7 +737,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; instruction_data:md_instruction_data|instruction_ram[14][29] ; Stuck at VCC due to stuck port data_in      ;
 ; instruction_data:md_instruction_data|instruction_ram[14][30] ; Stuck at GND due to stuck port data_in      ;
 ; instruction_data:md_instruction_data|instruction_ram[14][31] ; Stuck at GND due to stuck port data_in      ;
-; instruction_data:md_instruction_data|instruction_ram[15][0]  ; Stuck at GND due to stuck port data_in      ;
+; instruction_data:md_instruction_data|instruction_ram[15][0]  ; Stuck at VCC due to stuck port data_in      ;
 ; instruction_data:md_instruction_data|instruction_ram[15][1]  ; Stuck at GND due to stuck port data_in      ;
 ; instruction_data:md_instruction_data|instruction_ram[15][2]  ; Stuck at GND due to stuck port data_in      ;
 ; instruction_data:md_instruction_data|instruction_ram[15][3]  ; Stuck at GND due to stuck port data_in      ;
@@ -2612,9 +2611,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 383   ;
-; Number of registers using Synchronous Clear  ; 11    ;
-; Number of registers using Synchronous Load   ; 12    ;
+; Total registers                              ; 378   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 320   ;
@@ -2644,13 +2643,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DeBounce:md_debounce ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; N              ; 11    ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: frequency_divider:md_clock ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; nDiv           ; 25    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2763,16 +2762,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DeBounce:md_debounce"                                                                                                                                                                    ;
-+-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; n_reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; n_reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-+-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -2788,9 +2777,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Jun 19 17:40:00 2017
+    Info: Processing started: Mon Jun 19 18:30:17 2017
 Info: Command: quartus_map --lower_priority --read_settings_files=on --write_settings_files=off processador-de-batata -c processador-de-batata
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file frequency_divider.v
+    Info (12023): Found entity 1: frequency_divider
 Info (12021): Found 1 design units, including 1 entities, in source file bin_to_7seg.v
     Info (12023): Found entity 1: bin_to_7seg
 Info (12021): Found 1 design units, including 1 entities, in source file DeBounce.v
@@ -2819,12 +2810,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
     Info (12023): Found entity 1: control_unit
 Info (12021): Found 1 design units, including 1 entities, in source file bin_to_dec.v
     Info (12023): Found entity 1: bin_to_dec
-Warning (10236): Verilog HDL Implicit Net warning at processing_unit.v(42): created implicit net for "opcode_bin_dec_2"
-Critical Warning (10846): Verilog HDL Instantiation warning at processing_unit.v(43): instance has no name
-Critical Warning (10846): Verilog HDL Instantiation warning at processing_unit.v(58): instance has no name
+Warning (10236): Verilog HDL Implicit Net warning at processing_unit.v(45): created implicit net for "opcode_bin_dec_2"
+Critical Warning (10846): Verilog HDL Instantiation warning at processing_unit.v(46): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at processing_unit.v(61): instance has no name
 Info (12127): Elaborating entity "processing_unit" for the top level hierarchy
-Info (12128): Elaborating entity "DeBounce" for hierarchy "DeBounce:md_debounce"
-Warning (10230): Verilog HDL assignment warning at DeBounce.v(54): truncated value with size 32 to match size of target (11)
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:md_clock"
+Warning (10230): Verilog HDL assignment warning at frequency_divider.v(10): truncated value with size 32 to match size of target (26)
 Info (12128): Elaborating entity "bin_to_dec" for hierarchy "bin_to_dec:md_opcode_converter"
 Warning (10230): Verilog HDL assignment warning at bin_to_dec.v(19): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at bin_to_dec.v(17): truncated value with size 32 to match size of target (4)
@@ -3523,7 +3514,7 @@ Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "pc_bin_dec_1[4]" is missing source, defaulting to GND
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "memory_data:md_memory_data|memory" is uninferred due to asynchronous read logic
-Warning (12241): 11 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 10 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display_4[1]" is stuck at GND
     Warning (13410): Pin "display_4[2]" is stuck at GND
@@ -3539,16 +3530,17 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "button_clock"
     Warning (15610): No output dependent on input pin "switches[17]"
-Info (21057): Implemented 2192 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2186 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 57 output pins
-    Info (21061): Implemented 2114 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 703 warnings
-    Info: Peak virtual memory: 679 megabytes
-    Info: Processing ended: Mon Jun 19 17:40:24 2017
+    Info (21061): Implemented 2108 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 704 warnings
+    Info: Peak virtual memory: 674 megabytes
+    Info: Processing ended: Mon Jun 19 18:30:41 2017
     Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Total CPU time (on all processors): 00:00:23
 
 

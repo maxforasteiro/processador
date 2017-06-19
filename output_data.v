@@ -15,7 +15,7 @@ module output_data(clock, output_data_in, write_enabled, data_output,
 	   display_data = output_data_in;
   end
   
-  always @ (posedge input_ready) begin
+  always @ (input_ready or switches or clock) begin
     data_output = switches;
   end
 
