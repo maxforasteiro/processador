@@ -155,7 +155,7 @@ module control_unit(opcode,
 		end
 		5'b01100: begin //in
 		  pc_selector               = 1'b0;
-		  halt                      = reset ? 1 : 0;
+		  halt                      = reset ? 1'b1 : 1'b0;
 		  register_destiny_selector = 1'b1;
 		  register_write_enabled    = 1'b1;
 		  alu_input2_selector       = 1'b0;

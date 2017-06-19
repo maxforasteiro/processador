@@ -1,5 +1,5 @@
 Flow report for processador-de-batata
-Mon Jun 19 16:04:51 2017
+Mon Jun 19 17:41:48 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Jun 19 16:04:51 2017      ;
+; Flow Status                        ; Successful - Mon Jun 19 17:41:48 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador-de-batata                      ;
 ; Top-level Entity Name              ; processing_unit                            ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 2,530 / 114,480 ( 2 % )                    ;
-;     Total combinational functions  ; 2,290 / 114,480 ( 2 % )                    ;
-;     Dedicated logic registers      ; 817 / 114,480 ( < 1 % )                    ;
-; Total registers                    ; 817                                        ;
-; Total pins                         ; 205 / 529 ( 39 % )                         ;
+; Total logic elements               ; 1,883 / 114,480 ( 2 % )                    ;
+;     Total combinational functions  ; 1,835 / 114,480 ( 2 % )                    ;
+;     Dedicated logic registers      ; 383 / 114,480 ( < 1 % )                    ;
+; Total registers                    ; 383                                        ;
+; Total pins                         ; 78 / 529 ( 15 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                            ;
@@ -64,32 +64,32 @@ applicable agreement for further details.
 +-------------------+-----------------------+
 ; Option            ; Setting               ;
 +-------------------+-----------------------+
-; Start date & time ; 06/19/2017 16:02:39   ;
+; Start date & time ; 06/19/2017 17:40:01   ;
 ; Main task         ; Compilation           ;
 ; Revision Name     ; processador-de-batata ;
 +-------------------+-----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                             ;
-+-------------------------------------+---------------------------------------------+-----------------------+-----------------+----------------+
-; Assignment Name                     ; Value                                       ; Default Value         ; Entity Name     ; Section Id     ;
-+-------------------------------------+---------------------------------------------+-----------------------+-----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 268891677105016.149789895902732             ; --                    ; --              ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                          ; --                    ; --              ; eda_simulation ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR       ; /home/max/faculdade/labaoc/simulation/qsim/ ; --                    ; --              ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                 ; --                    ; --              ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                   ; <None>                ; --              ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                        ; --                    ; --              ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                          ; --                    ; --              ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                           ; --                    ; --              ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                        ; --                    ; --              ; --             ;
-; PARTITION_COLOR                     ; 16764057                                    ; --                    ; processing_unit ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                       ; --                    ; processing_unit ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                      ; --                    ; processing_unit ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                ; --                    ; --              ; --             ;
-; TOP_LEVEL_ENTITY                    ; processing_unit                             ; processador-de-batata ; --              ; --             ;
-+-------------------------------------+---------------------------------------------+-----------------------+-----------------+----------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                            ;
++-------------------------------------+------------------------------------------------------------+-----------------------+-----------------+----------------+
+; Assignment Name                     ; Value                                                      ; Default Value         ; Entity Name     ; Section Id     ;
++-------------------------------------+------------------------------------------------------------+-----------------------+-----------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 268891677105016.149790480105800                            ; --                    ; --              ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                         ; --                    ; --              ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; /home/max/faculdade/processador-de-batata/simulation/qsim/ ; --                    ; --              ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                ; --                    ; --              ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                  ; <None>                ; --              ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                       ; --                    ; --              ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                         ; --                    ; --              ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                          ; --                    ; --              ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                       ; --                    ; --              ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                   ; --                    ; processing_unit ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                      ; --                    ; processing_unit ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                     ; --                    ; processing_unit ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                               ; --                    ; --              ; --             ;
+; TOP_LEVEL_ENTITY                    ; processing_unit                                            ; processador-de-batata ; --              ; --             ;
++-------------------------------------+------------------------------------------------------------+-----------------------+-----------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -97,12 +97,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:21     ; 1.0                     ; 630 MB              ; 00:00:19                           ;
-; Fitter                    ; 00:01:06     ; 1.0                     ; 1068 MB             ; 00:01:02                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 628 MB              ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:18     ; 1.0                     ; 719 MB              ; 00:00:17                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 869 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:55     ; --                      ; --                  ; 00:01:48                           ;
+; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 628 MB              ; 00:00:23                           ;
+; Fitter                    ; 00:00:52     ; 1.0                     ; 1020 MB             ; 00:00:51                           ;
+; Assembler                 ; 00:00:08     ; 1.0                     ; 627 MB              ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 701 MB              ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 861 MB              ; 00:00:01                           ;
+; Total                     ; 00:01:32     ; --                      ; --                  ; 00:01:29                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
