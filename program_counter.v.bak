@@ -1,0 +1,12 @@
+module program_counter(clock, pc, address, choice);
+  input [31:0] pc, address;
+  input choice, clock;
+  
+  wire increment
+  
+  always @ ()
+  begin
+    
+  end
+  
+endmodule

@@ -1,0 +1,4 @@
+module bin_to_dec(ten_0, ten_1, ten_2, ten3, ten_4, ten_5, ten_6, ten_7);
+
+
+endmodule

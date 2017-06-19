@@ -1,0 +1,24 @@
+module ALU_module(ALUOp, shamt, reg_in1, reg_in2, reg_out, zero);
+  input [3:0] ALUOp;
+  input [4:0] shamt;
+  input [31:0] reg_in1, reg_in2;
+  output reg [31:0] reg_out;
+  output zero;
+
+  always @ (ALUOp or reg_in1 or reg_in2)
+  begin
+    case(ALUOp[3:0])
+      4'b0000: reg_out = reg_in1 + reg_in2;
+      4'b0001: reg_out = reg_in1 - reg_in2;
+      4'b0010: reg_out = reg_in1 < reg_in2 ? 1 : 0;
+      4'b0011: reg_out = ~reg_in1;
+      4'b0100: reg_out = reg_in1 & reg_in2;
+      4'b0101: reg_out = reg_in1 | reg_in2;
+      4'b0110: reg_out = reg_in1 ^ reg_in2;
+      4'b0111: reg_out = reg_in1 << shamt;
+      4'b1000: reg_out = reg_in1 >> shamt;
+    endcase
+  end
+
+  assign zero = (reg_out == 0);
+endmodule

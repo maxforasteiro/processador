@@ -1,0 +1,3 @@
+module mux_4(selector, in1, in2, in3, in4, out);
+
+endmodule

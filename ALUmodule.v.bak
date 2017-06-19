@@ -1,0 +1,9 @@
+module ALU();
+  input [3:0] ALUOp;
+  input [4:0] shamt;
+  input [31:0] reg_in1, reg_in2;
+  output reg [31:0] reg_out;
+  output zero;
+
+  
+endmodule
