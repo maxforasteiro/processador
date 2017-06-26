@@ -4,7 +4,7 @@ module extender(immediate, extended);
   
   always @ (*)
   begin
-    extended = immediate;
+    extended = {14'h0000, immediate};
   end
   
 endmodule

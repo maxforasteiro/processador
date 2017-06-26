@@ -28,7 +28,7 @@ module bin_to_7seg(binary, display);
 		4'B1001:
 		  aux = 7'B0010000;
 		default:
-		  aux = 7'B1111111;
+		  aux = 7'B0111111;
 	 endcase
   end
   

@@ -151,7 +151,7 @@ module control_unit(opcode,
 		  memory_write_enabled      = 1'b0;
 		  output_write_enabled      = 1'b0;
 		  alu_mem_output_selector   = 2'h0;
-		  aluop_selector            = 4'h0;
+		  aluop_selector            = 4'b1001;
 		end
 		5'b01100: begin //in
 		  pc_selector               = 1'b0;

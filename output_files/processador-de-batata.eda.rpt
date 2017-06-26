@@ -1,5 +1,5 @@
 EDA Netlist Writer report for processador-de-batata
-Mon Jun 19 18:31:58 2017
+Mon Jun 26 19:05:09 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jun 19 18:31:58 2017 ;
+; EDA Netlist Writer Status ; Successful - Mon Jun 26 19:05:09 2017 ;
 ; Revision Name             ; processador-de-batata                 ;
 ; Top-level Entity Name     ; processing_unit                       ;
 ; Family                    ; Cyclone IV E                          ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Jun 19 18:31:56 2017
+    Info: Processing started: Mon Jun 26 19:05:07 2017
 Info: Command: quartus_eda --lower_priority --read_settings_files=off --write_settings_files=off processador-de-batata -c processador-de-batata
 Info (204019): Generated file processador-de-batata.vo in folder "/home/max/faculdade/processador-de-batata/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 874 megabytes
-    Info: Processing ended: Mon Jun 19 18:31:58 2017
+    Info: Peak virtual memory: 885 megabytes
+    Info: Processing ended: Mon Jun 26 19:05:09 2017
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

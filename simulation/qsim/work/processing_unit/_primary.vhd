@@ -14,6 +14,7 @@ entity processing_unit is
         display_6       : out    vl_logic_vector(6 downto 0);
         display_7       : out    vl_logic_vector(6 downto 0);
         reset           : in     vl_logic;
+        flag_write      : out    vl_logic;
         test0           : out    vl_logic_vector(31 downto 0);
         test1           : out    vl_logic_vector(31 downto 0);
         test2           : out    vl_logic_vector(31 downto 0);

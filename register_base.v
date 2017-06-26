@@ -7,7 +7,7 @@ module register_base(register_destiny, register_source1, register_source2, clock
   reg [31:0] register_database [31:0];
   always @ (posedge clock)
   begin
-    register_database[0] = 32'b0;
+    register_database[0] = 32'h00000000;
     if(write_enabled==1) begin
       register_database[register_destiny] = write_data;
     end

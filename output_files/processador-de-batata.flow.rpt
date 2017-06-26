@@ -1,5 +1,5 @@
 Flow report for processador-de-batata
-Mon Jun 19 18:31:58 2017
+Mon Jun 26 19:05:09 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Jun 19 18:31:58 2017      ;
+; Flow Status                        ; Successful - Mon Jun 26 19:05:09 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador-de-batata                      ;
 ; Top-level Entity Name              ; processing_unit                            ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 1,872 / 114,480 ( 2 % )                    ;
-;     Total combinational functions  ; 1,848 / 114,480 ( 2 % )                    ;
-;     Dedicated logic registers      ; 378 / 114,480 ( < 1 % )                    ;
-; Total registers                    ; 378                                        ;
+; Total logic elements               ; 3,422 / 114,480 ( 3 % )                    ;
+;     Total combinational functions  ; 3,089 / 114,480 ( 3 % )                    ;
+;     Dedicated logic registers      ; 1,466 / 114,480 ( 1 % )                    ;
+; Total registers                    ; 1466                                       ;
 ; Total pins                         ; 78 / 529 ( 15 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                      ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+-----------------------+
 ; Option            ; Setting               ;
 +-------------------+-----------------------+
-; Start date & time ; 06/19/2017 18:30:18   ;
+; Start date & time ; 06/26/2017 19:03:25   ;
 ; Main task         ; Compilation           ;
 ; Revision Name     ; processador-de-batata ;
 +-------------------+-----------------------+
@@ -75,19 +75,23 @@ applicable agreement for further details.
 +-------------------------------------+------------------------------------------------------------+-----------------------+-----------------+----------------+
 ; Assignment Name                     ; Value                                                      ; Default Value         ; Entity Name     ; Section Id     ;
 +-------------------------------------+------------------------------------------------------------+-----------------------+-----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 268891677105016.149790781807110                            ; --                    ; --              ; --             ;
+; COMPILER_SIGNATURE_ID               ; 268891677105016.149851460407939                            ; --                    ; --              ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                         ; --                    ; --              ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; /home/max/faculdade/processador-de-batata/simulation/qsim/ ; --                    ; --              ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                ; --                    ; --              ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                  ; <None>                ; --              ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                       ; --                    ; --              ; eda_simulation ;
+; FITTER_EFFORT                       ; Fast Fit                                                   ; Auto Fit              ; --              ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                         ; --                    ; --              ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                          ; --                    ; --              ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                       ; --                    ; --              ; --             ;
 ; PARTITION_COLOR                     ; 16764057                                                   ; --                    ; processing_unit ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                      ; --                    ; processing_unit ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                                     ; --                    ; processing_unit ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                        ; --                    ; --              ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                      ; --                    ; --              ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                               ; --                    ; --              ; --             ;
+; SMART_RECOMPILE                     ; On                                                         ; Off                   ; --              ; --             ;
 ; TOP_LEVEL_ENTITY                    ; processing_unit                                            ; processador-de-batata ; --              ; --             ;
 +-------------------------------------+------------------------------------------------------------+-----------------------+-----------------+----------------+
 
@@ -97,12 +101,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 622 MB              ; 00:00:22                           ;
-; Fitter                    ; 00:00:46     ; 1.0                     ; 1043 MB             ; 00:00:46                           ;
-; Assembler                 ; 00:00:08     ; 1.0                     ; 627 MB              ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 710 MB              ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 861 MB              ; 00:00:01                           ;
-; Total                     ; 00:01:26     ; --                      ; --                  ; 00:01:23                           ;
+; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 639 MB              ; 00:00:22                           ;
+; Fitter                    ; 00:00:44     ; 1.0                     ; 1056 MB             ; 00:00:44                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 632 MB              ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 733 MB              ; 00:00:11                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 880 MB              ; 00:00:02                           ;
+; Total                     ; 00:01:28     ; --                      ; --                  ; 00:01:27                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,7 +1,7 @@
 module mux_2(selector, in1, in2, out);
   input selector;
-  input [4:0] in1, in2;
-  output reg [4:0] out;
+  input [31:0] in1, in2;
+  output reg [31:0] out;
   
   always @ (*) begin
     if(selector == 0)

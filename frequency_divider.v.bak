@@ -1,0 +1,16 @@
+module frequency_divider(clk, clk_out);
+  input clk;
+  output clk_out;
+  reg [15:0] counter;
+
+  always @(posedege clk)
+  begin
+    if(counter==16'd50000)
+      counter<=16'd0;
+    else
+      counter<=counter+1;
+  end
+
+  assign out_clk = (counter == 16'd50000);
+  
+endmodule
