@@ -1,13 +1,11 @@
 module processing_unit(button_clock, clock_50, switches, display_0,
   display_1, display_2, display_3, display_4,
-  display_5, display_6, display_7, reset, flag_write,
-  /*test0, test1, test2, test3*/);
+  display_5, display_6, display_7, reset, flag_write);
   
   input reset, button_clock, clock_50;
   input [17:0] switches;
   output wire [6:0] display_0, display_1, display_2, display_3, display_4, display_5, display_6, display_7;
   output wire flag_write;
-  /*output [31:0] test0, test1, test2, test3;*/
   wire clocks;
   wire [1:0] alu_mem_output_selector;
   wire pc_selector, halt, register_destiny_selector, register_write_enabled;
@@ -21,17 +19,10 @@ module processing_unit(button_clock, clock_50, switches, display_0,
   wire [4:0] opcode_bin_dec_0, opcode_bin_dec_1, pc_bin_dec_0, pc_bin_dec_1;
   
   assign flag_write = halt;
-  /*assign clocks = clock_50;*/
   
   frequency_divider md_clock(
   .clk(clock_50),
   .clk_out(clocks));
-  /*
-  DeBounce md_debounce(
-  .clk(clock_50),
-  .n_reset(1),
-  .button_in(button_clock),
-  .DB_out(reset));*/
   
   bin_to_dec md_opcode_converter(
   .binary(instruction[31:27]),
@@ -150,9 +141,4 @@ module processing_unit(button_clock, clock_50, switches, display_0,
   .in4(0),
   .out(register_write_data));
   
-  /*assign test0 = register_output1;
-  assign test1 = alu_output;
-  assign test2 = alu_input2;
-  assign test3 = signal_extended;
-  */
 endmodule
